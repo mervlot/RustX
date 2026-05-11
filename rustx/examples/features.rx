@@ -1,0 +1,15 @@
+name := "RustX"
+
+if name == "RustX" {
+    println("Language initialized")
+}
+
+for i := 0; i < 5; i++ {
+    print(i)
+    print(" ")
+}
+println("")
+
+println("Time now: " + time_now())
+println("Sqrt of 16: ")
+println(math_sqrt(16))
