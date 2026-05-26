@@ -1,0 +1,27 @@
+func factorial(n int) int {
+    if n <= 1 {
+        return 1
+    }
+    return n * factorial(n - 1)
+}
+
+println("Factorial of 5 is:", factorial(5))
+
+x := 10
+if x > 5 && x < 15 {
+    println("x is between 5 and 15")
+}
+
+s1 := "hello"
+s2 := "hello"
+if s1 == s2 {
+    println("Strings are equal")
+}
+
+for i := 0; i < 5; i++ {
+    println("Iteration:", i)
+}
+
+write_file("test.txt", "RustX was here")
+content := read_file("test.txt")
+println("File content:", content)
