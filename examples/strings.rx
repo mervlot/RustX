@@ -1,0 +1,10 @@
+s := "Hello RustX"
+println(s)
+println("Length:", len(s))
+println("Contains 'Rust':", contains(s, "Rust"))
+println("Upper:", to_upper(s))
+println("Lower:", to_lower(s))
+
+parts := split(s, " ")
+println("Parts:", parts)
+println("Joined:", join(parts, "-"))

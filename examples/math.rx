@@ -1,0 +1,5 @@
+println("Sqrt 16:", sqrt(16))
+println("Abs -10:", abs(-10))
+println("2^10:", pow(2, 10))
+println("Sin(0):", sin(0))
+println("Cos(0):", cos(0))
