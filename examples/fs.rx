@@ -1,0 +1,15 @@
+filename := "test.txt"
+content := "Hello from RustX filesystem!"
+
+println("Writing to", filename)
+write_file(filename, content)
+
+println("Reading from", filename)
+readBack := read_file(filename)
+println("Content:", readBack)
+
+if content == readBack {
+    println("File verification successful")
+} else {
+    println("File verification failed")
+}
