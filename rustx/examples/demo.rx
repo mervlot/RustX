@@ -1,0 +1,21 @@
+func factorial(n) {
+    if n <= 1 {
+        return 1
+    }
+    return n * factorial(n - 1)
+}
+
+println("Factorial of 5 is:")
+println(factorial(5))
+
+x := 10
+if x > 5 {
+    println("x is greater than 5")
+} else {
+    println("x is 5 or less")
+}
+
+for i := 0; i < 5; i++ {
+    print("i is: ")
+    println(i)
+}
