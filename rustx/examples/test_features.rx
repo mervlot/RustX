@@ -1,0 +1,29 @@
+println("--- Scoping Test ---")
+x := 10
+if true {
+    x = 20
+    println(x) // Expect 20
+}
+println(x) // Expect 20
+
+println("--- Short-circuiting Test ---")
+func sideEffect() {
+    println("Side effect!")
+    return true
+}
+
+println("Testing && with false:")
+false && sideEffect() // Should NOT print "Side effect!"
+
+println("Testing || with true:")
+true || sideEffect() // Should NOT print "Side effect!"
+
+println("--- Indexing Test ---")
+s := "hello"
+println(s[0]) // Expect h
+println(s[1]) // Expect e
+
+parts := split("a,b,c", ",")
+println(parts[0]) // Expect a
+println(parts[1]) // Expect b
+println(parts[2]) // Expect c
