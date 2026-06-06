@@ -1,0 +1,14 @@
+msg := "RustX is awesome"
+println(to_upper(msg))
+
+if (contains(msg, "awesome")) {
+    println("Indeed it is!")
+}
+
+parts := split(msg, " ")
+println("Words in message:")
+println(parts)
+
+joined := join(parts, "-")
+println("Joined with dashes:")
+println(joined)
