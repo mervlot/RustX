@@ -1,0 +1,36 @@
+println("--- Math ---")
+println("abs(-5):", abs(-5))
+println("abs(5.5):", abs(5.5))
+println("pow(2, 3):", pow(2, 3))
+println("sin(0):", sin(0))
+
+println("--- Strings ---")
+s := "hello world"
+println("len(s):", len(s))
+parts := split(s, " ")
+println("split(s, ' '):", parts)
+
+println("--- Time ---")
+t1 := now()
+println("now():", t1)
+println("sleeping 100ms...")
+sleep(100)
+t2 := now()
+println("after sleep now():", t2)
+
+println("--- Filesystem ---")
+filename := "test_file.txt"
+content := "Hello RustX File IO"
+println("writing to", filename)
+write_file(filename, content)
+println("reading from", filename)
+read_back := read_file(filename)
+println("content:", read_back)
+
+if (read_back == content) {
+    println("File IO: SUCCESS")
+} else {
+    println("File IO: FAILURE")
+    println("Expected:", content)
+    println("Got:", read_back)
+}
