@@ -1,0 +1,11 @@
+println("Looping demo:")
+
+for (i := 0; i < 5; i++) {
+    println(i)
+}
+
+x := 0
+while (x < 3) {
+    println("while:", x)
+    x++
+}
