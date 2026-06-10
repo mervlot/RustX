@@ -1,0 +1,5 @@
+name := "RustX";
+
+if (name == "RustX") {
+    println("Language initialized");
+}
