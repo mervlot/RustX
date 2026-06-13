@@ -1,0 +1,26 @@
+var name = "RustX"
+
+if (name == "RustX") {
+    println("Language initialized")
+} else {
+    println("Unknown language")
+}
+
+x := 10
+y := 20
+
+if (x < y && y > 15) {
+    println("Logic works")
+}
+
+var counter = 0
+while (counter < 5) {
+    print(counter)
+    print(" ")
+    counter++
+}
+println("")
+
+for (i := 0; i < 3; i++) {
+    println("For loop iteration")
+}
