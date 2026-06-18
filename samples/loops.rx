@@ -1,0 +1,9 @@
+for i := 0; i < 10; i++ {
+    println("Count:", i)
+}
+
+x := 0
+while x < 5 {
+    println("While loop:", x)
+    x = x + 1
+}
