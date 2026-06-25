@@ -1,0 +1,20 @@
+func main() {
+    println("RustX Starter")
+
+    var x = 10
+    y := 20
+
+    println("x + y =", x + y)
+
+    if x < y {
+        println("x is less than y")
+    } else {
+        println("x is not less than y")
+    }
+
+    for i := 0; i < 5; i++ {
+        println("loop", i)
+    }
+}
+
+main()
