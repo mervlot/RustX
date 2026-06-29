@@ -1,0 +1,20 @@
+name := "RustX"
+
+if name == "RustX" {
+    println("Language initialized")
+} else {
+    println("Something is wrong")
+}
+
+count := 0
+while count < 3 {
+    println("Looping...", count)
+    count++
+}
+
+for i := 0; i < 5; i++ {
+    if i == 2 {
+        println("Found two!")
+    }
+    println("For loop:", i)
+}
