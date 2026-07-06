@@ -1,0 +1,10 @@
+// RustX Starter requires explicit modulo as it's not in the evaluator yet,
+// but we can use i - (i / 2) * 2
+for (i := 1; i <= 10; i++) {
+    half := i / 2
+    if (i == half * 2) {
+        println(i, "is even")
+    } else {
+        println(i, "is odd")
+    }
+}
