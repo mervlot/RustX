@@ -1,0 +1,13 @@
+println("Counting from 0 to 9:")
+
+for i := 0; i < 10; i++ {
+    print(i, "")
+}
+println()
+
+println("While loop example:")
+var count = 5
+while (count > 0) {
+    println("Count:", count)
+    count--
+}

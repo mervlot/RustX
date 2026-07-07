@@ -1,0 +1,15 @@
+var filename = "test.txt"
+var content = "Hello from RustX!"
+
+println("Writing to file:", filename)
+write_file(filename, content)
+
+println("Reading from file:")
+var read = read_file(filename)
+println("Content:", read)
+
+if (contains(read, "RustX")) {
+    println("File contains 'RustX'")
+}
+
+println("Uppercase content:", to_upper(read))
