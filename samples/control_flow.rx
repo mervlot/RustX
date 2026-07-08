@@ -1,0 +1,17 @@
+name := "RustX"
+
+if (name == "RustX") {
+    println("Language initialized");
+} else {
+    println("Unknown language");
+}
+
+for i := 0; i < 5; i++ {
+    println("Iteration:", i);
+}
+
+count := 3
+while (count > 0) {
+    println("Counting down:", count);
+    count--
+}
