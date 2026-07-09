@@ -1,0 +1,16 @@
+name := "RustX"
+
+if name == "RustX" {
+    println("Language initialized")
+}
+
+for var i = 0; i < 5; i++ {
+    println("Count:", i)
+}
+
+var list = [1, 2, 3]
+println("List:", list)
+println("Length:", len(list))
+
+list = push(list, 4)
+println("After push:", list)
