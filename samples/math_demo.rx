@@ -1,0 +1,11 @@
+println("ABS(-5):", abs(-5))
+println("POW(2, 3):", pow(2, 3))
+println("SIN(0):", sin(0))
+println("COS(0):", cos(0))
+println("NOW:", now())
+
+s := "RustX"
+println("LEN:", len(s))
+println("UPPER:", to_upper(s))
+println("LOWER:", to_lower(s))
+println("CONTAINS 'Rust':", contains(s, "Rust"))
