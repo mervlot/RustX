@@ -1,0 +1,9 @@
+for i := 0; i < 5; i++ {
+    println("i =", i)
+}
+
+j := 0
+while j < 3 {
+    println("j =", j)
+    j++
+}

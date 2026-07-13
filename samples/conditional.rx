@@ -1,0 +1,8 @@
+var name = "RustX"
+println("name is", name)
+
+if (name == "RustX") {
+    println("Language initialized")
+} else {
+    println("Failed")
+}
