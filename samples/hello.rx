@@ -1,0 +1,13 @@
+func main() {
+    println("Hello from RustX!")
+
+    x := 5
+    y := 10
+    println("x + y =", x + y)
+
+    if x < y {
+        println("x is less than y")
+    }
+}
+
+main()
