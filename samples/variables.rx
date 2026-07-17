@@ -1,0 +1,12 @@
+name := "RustX"
+
+if name == "RustX" {
+    println("Language initialized")
+}
+
+var age = 16
+println("Age is:", age)
+
+// Mutate variable
+age = age + 1
+println("Next year age will be:", age)

@@ -1,0 +1,33 @@
+println("=== Strings built-ins ===")
+s := "Hello World"
+println("Length of string is:", len(s))
+println("Upper case:", to_upper(s))
+println("Lower case:", to_lower(s))
+println("Contains 'World':", contains(s, "World"))
+
+parts := split(s, " ")
+println("Split parts array:", parts)
+println("Joined again with hyphen:", join(parts, "-"))
+
+println()
+println("=== Math built-ins ===")
+println("Absolute value of -42:", abs(-42))
+println("2^10 is:", pow(2, 10))
+println("Sine of 0 is:", sin(0))
+println("Cosine of 0 is:", cos(0))
+
+println()
+println("=== Filesystem built-ins ===")
+temp_file := "temp_demo.txt"
+write_file(temp_file, "Hello from the RustX File System built-ins!")
+println("Wrote file:", temp_file)
+content := read_file(temp_file)
+println("Read from file:", content)
+
+println()
+println("=== Time built-ins ===")
+t1 := now()
+println("Sleeping for 100 milliseconds...")
+sleep(100)
+t2 := now()
+println("Elapsed milliseconds:", t2 - t1)

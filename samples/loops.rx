@@ -1,0 +1,11 @@
+println("Looping with a for loop:")
+for i := 0; i < 5; i++ {
+    println("i is", i)
+}
+
+println("Looping with a while loop:")
+var count = 0
+while count < 3 {
+    println("count is", count)
+    count++
+}
