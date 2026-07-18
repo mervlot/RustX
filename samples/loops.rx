@@ -1,0 +1,12 @@
+println("Counting from 0 to 4:")
+
+for i := 0; i < 5; i++ {
+    println("Value of i is:", i)
+}
+
+println("While loop count down:")
+x := 3
+while x > 0 {
+    println("x =", x)
+    x--
+}
