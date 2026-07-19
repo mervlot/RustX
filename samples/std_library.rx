@@ -1,0 +1,22 @@
+println("--- Strings demo ---")
+var message = "RustX Starter Programming Language"
+println("Length of message:", len(message))
+println("Does it contain 'Starter'?", contains(message, "Starter"))
+println("Upper case:", to_upper(message))
+
+println("--- Math demo ---")
+println("abs(-42) =", abs(-42))
+println("pow(2, 10) =", pow(2, 10))
+println("sin(3.14159 / 2) =", sin(3.14159265 / 2.0))
+
+println("--- Filesystem demo ---")
+var testFile = "demo_file.txt"
+write_file(testFile, "RustX writes data to a file successfully!")
+println("Read file content:")
+println(read_file(testFile))
+
+println("--- Time demo ---")
+var startTime = now()
+sleep(0.5)
+var endTime = now()
+println("Slept for approximately:", endTime - startTime, "seconds")
