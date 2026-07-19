@@ -1,0 +1,11 @@
+println("--- Running While Loop ---")
+var x = 0
+while x < 5 {
+    println("while loop step x =", x)
+    x++
+}
+
+println("--- Running For Loop ---")
+for i := 0; i < 5; i++ {
+    println("for loop step i =", i)
+}
