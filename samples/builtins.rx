@@ -1,0 +1,20 @@
+println("Testing Math Builtins:")
+println("abs(-10) =", abs(-10))
+println("pow(2, 4) =", pow(2, 4))
+
+println("\nTesting String Builtins:")
+str := "RustX Starter Programming Language"
+println("Length of str:", len(str))
+println("Upper:", to_upper(str))
+println("Lower:", to_lower(str))
+
+println("Contains 'Starter':", contains(str, "Starter"))
+parts := split(str, " ")
+println("Splitted words count:", len(parts))
+joined := join(parts, "-")
+println("Joined with dashes:", joined)
+
+println("\nFile System built-ins:")
+write_file("test_rx.txt", "RustX was here!")
+content := read_file("test_rx.txt")
+println("File content:", content)
