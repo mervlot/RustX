@@ -1,0 +1,12 @@
+// For loop and Postfix operators in RustX Starter
+println("Go-style loop:");
+for i := 0; i < 5; i++ {
+    println("Iteration:", i);
+}
+
+println("While-style loop:");
+var count = 0;
+while count < 3 {
+    println("Count:", count);
+    count++;
+}

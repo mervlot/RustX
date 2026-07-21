@@ -1,0 +1,8 @@
+// Control flow demonstration in RustX Starter
+name := "RustX";
+
+if name == "RustX" {
+    println("Language initialized");
+} else {
+    println("Unknown language");
+}
