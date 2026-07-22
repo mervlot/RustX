@@ -1,0 +1,4 @@
+// Go-style for loop header and postfix operator
+for i := 0; i < 5; i++ {
+    println("Count:", i);
+}

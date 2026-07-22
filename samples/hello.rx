@@ -1,0 +1,6 @@
+// Hello World
+func main() {
+    println("RustX Starter");
+}
+
+main();
