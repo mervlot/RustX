@@ -1,0 +1,11 @@
+// Factorial calculation using recursive functions in RustX Starter.
+
+func factorial(n int) int {
+    if n <= 1 {
+        return 1
+    }
+    return n * factorial(n - 1)
+}
+
+println("Factorial of 5 is:")
+println(factorial(5))

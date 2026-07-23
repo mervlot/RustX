@@ -1,0 +1,31 @@
+// Variable mutability, scoping, conditionals and loop structures in RustX Starter.
+
+var x = 10;
+println("Initial x =", x)
+
+x = 20; // reassignment
+println("After update, x =", x)
+
+y := "RustX"; // shorthand declaration
+println("Welcome to", y)
+
+if x > 15 {
+    println("x is greater than 15")
+} else {
+    println("x is not greater than 15")
+}
+
+// Go-style for loop with local variable
+println("Counting from 0 to 4 using Go-style for loop:")
+for i := 0; i < 5; i++ {
+    println("i =", i)
+}
+
+// While loop demonstration
+var count = 3;
+println("Countdown using while loop:")
+while count > 0 {
+    println(count)
+    count--
+}
+println("Blast off!")
