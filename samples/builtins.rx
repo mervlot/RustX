@@ -1,0 +1,52 @@
+// Standard library built-ins demonstration in RustX Starter.
+
+// 1. Math Functions
+println("--- Math Built-ins ---")
+val := -42.75;
+println("abs(", val, ") =", abs(val))
+println("pow(2, 10) =", pow(2, 10))
+println("sin(0) =", sin(0))
+
+// 2. String Functions
+println("\n--- String Built-ins ---")
+text := "RustX is fast and elegant"
+println("Length of text =", len(text))
+println("Contains 'fast'? =", contains(text, "fast"))
+println("Upper case =", to_upper(text))
+
+split_arr := split(text, " ")
+println("Split text into array:", split_arr)
+println("Join array with '-':", join(split_arr, "-"))
+
+// 3. Array and Index Operations
+println("\n--- Array Built-ins & Indexing ---")
+arr := [1, 2, 3, 4]
+println("Array is:", arr)
+println("Length of array =", len(arr))
+println("Array index 2 =", arr[2])
+
+// Modify array elements via index assignment
+arr[2] = 99
+println("Array after index assignment arr[2]=99 is:", arr)
+
+// String indexing
+println("First letter of text =", text[0])
+
+// 4. Filesystem Basics
+println("\n--- Filesystem Built-ins ---")
+test_file := "test_output.txt"
+content := "Hello from RustX standard library!"
+println("Writing to file", test_file, "...")
+write_file(test_file, content)
+
+println("Reading back from file...")
+read_content := read_file(test_file)
+println("Content read:", read_content)
+
+// 5. Time
+println("\n--- Time Built-ins ---")
+t1 := now()
+println("Sleeping for 100ms...")
+sleep(100)
+t2 := now()
+println("Elapsed time:", t2 - t1, "ms")
