@@ -1,0 +1,11 @@
+path := "test_temp.txt"
+content := "Hello from RustX filesystem APIs!"
+
+println("Writing file...")
+write_file(path, content)
+
+println("Reading file...")
+read_content := read_file(path)
+println("Read contents:", read_content)
+
+println("File contains 'RustX':", contains(read_content, "RustX"))
