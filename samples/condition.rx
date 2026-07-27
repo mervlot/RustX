@@ -1,0 +1,7 @@
+name := "RustX"
+
+if name == "RustX" {
+    println("Language initialized successfully")
+} else {
+    println("Initialization failure")
+}
