@@ -1,0 +1,11 @@
+// Loops and math standard library builtins demonstration
+println("Standard Math Demo:");
+println("Absolute value of -10:", abs(-10));
+println("2 raised to power 5:", pow(2, 5));
+println("Sine of 0.0:", sin(0.0));
+
+println("String Built-ins Demo:");
+name := "RustX Starter";
+println("Length of name:", len(name));
+println("Upper case:", to_upper(name));
+println("Contains 'Rust':", contains(name, "Rust"));
