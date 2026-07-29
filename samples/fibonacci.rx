@@ -1,0 +1,11 @@
+// Fibonacci implementation in RustX Starter
+func fibonacci(n int) int {
+    if n <= 1 {
+        return n;
+    }
+    return fibonacci(n - 1) + fibonacci(n - 2);
+}
+
+for i := 0; i < 10; i++ {
+    println("Fibonacci of", i, ":", fibonacci(i));
+}
