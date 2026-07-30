@@ -1,0 +1,17 @@
+println("Testing Standard Library functions:")
+
+// Strings
+s := "rustx_starter"
+println("Length of string:", len(s))
+println("Contains starter:", contains(s, "starter"))
+println("Upper case:", to_upper(s))
+
+// Math
+println("Absolute of -10 is:", abs(-10))
+println("2 raised to power 10 is:", pow(2, 10))
+
+// Arrays & index assignment
+arr := [1, 2, 3]
+println("Initial array:", arr)
+arr[1] = 99
+println("Array after element update:", arr)
