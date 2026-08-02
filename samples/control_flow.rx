@@ -1,0 +1,12 @@
+name := "RustX"
+
+if name == "RustX" {
+    println("Language initialized with", name)
+} else {
+    println("Unknown language")
+}
+
+println("Counting to 5 using for loop:")
+for i := 1; i <= 5; i++ {
+    println("Number:", i)
+}
