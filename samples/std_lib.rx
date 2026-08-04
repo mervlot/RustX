@@ -1,0 +1,20 @@
+// Test math built-ins
+println("abs(-5) =", abs(-5))
+println("pow(2, 3) =", pow(2, 3))
+println("sin(0) =", sin(0.0))
+
+// Test string built-ins
+s := "RustX Starter Programming Language"
+println("Length of s:", len(s))
+println("Upper case:", to_upper(s))
+println("Contains 'Starter':", contains(s, "Starter"))
+
+// Test arrays
+arr := [1, 2, 3]
+println("Array:", arr)
+println("Length of array:", len(arr))
+
+// Test filesystem
+write_file("test_temp.txt", "This is temp content.")
+content := read_file("test_temp.txt")
+println("File read content:", content)
