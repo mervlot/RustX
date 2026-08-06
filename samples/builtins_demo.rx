@@ -1,0 +1,23 @@
+// Demonstrating Math built-ins
+println("Absolute value of -15:", abs(-15));
+println("2 raised to the power of 10:", pow(2, 10));
+println("Sine of 0:", sin(0));
+
+// Demonstrating String built-ins
+str := "RustX,Starter,Language";
+parts := split(str, ",");
+println("Splitting:", parts);
+
+joined := join(parts, " -> ");
+println("Joining:", joined);
+
+upper := to_upper("rustx");
+println("To Upper:", upper);
+
+// Demonstrating Filesystem built-ins
+path := "temp.txt";
+content := "Welcome to RustX Starter filesystem operations!";
+write_file(path, content);
+
+readBack := read_file(path);
+println("Read from file:", readBack);
