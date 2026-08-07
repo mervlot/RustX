@@ -1,0 +1,23 @@
+// Standard Library & Math Builtins Demo
+println("Absolute value of -10 is:", abs(-10))
+println("2 to the power of 10 is:", pow(2, 10))
+println("Sine of 0.0 is:", sin(0.0))
+println("Cosine of 0.0 is:", cos(0.0))
+
+// Array and String standard library functions
+var message = "apple,banana,cherry"
+var fruits = split(message, ",")
+println("Length of split list:", len(fruits))
+println("First fruit is:", fruits[0])
+
+var joined = join(fruits, " - ")
+println("Joined fruits string:", joined)
+println("Joined in uppercase:", to_upper(joined))
+
+// File operations
+var path = "temp_file.txt"
+var written = write_file(path, "Hello from RustX standard library!")
+if written {
+    var content = read_file(path)
+    println("File contents read successfully:", content)
+}
