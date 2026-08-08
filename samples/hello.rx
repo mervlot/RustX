@@ -1,0 +1,11 @@
+func main() {
+    println("Hello World")
+}
+
+main()
+
+var age = 16
+name := "Muhammad"
+
+println("Name:", name)
+println("Age:", age)

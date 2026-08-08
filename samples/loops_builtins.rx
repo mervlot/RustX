@@ -1,0 +1,19 @@
+println("--- Loops and Postfix operators ---")
+for i := 0; i < 5; i++ {
+    println("i =", i)
+}
+
+println("--- Math builtins ---")
+println("abs(-10) =", abs(-10))
+println("pow(2, 3) =", pow(2, 3))
+println("sin(0) =", sin(0))
+
+println("--- Strings and arrays ---")
+msg := "Hello RustX"
+println("Length of msg:", len(msg))
+println("Does msg contain 'Rust'?", contains(msg, "Rust"))
+println("Uppercase msg:", to_upper(msg))
+
+arr := [1, 2, 3, 4]
+println("Array length:", len(arr))
+println("Element at index 2:", arr[2])
