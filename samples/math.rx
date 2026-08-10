@@ -1,0 +1,10 @@
+var num = -42
+println("Absolute value of -42 is", abs(num))
+
+var base = 2.0
+var exponent = 10
+println("2^10 is", pow(base, exponent))
+
+var angle = 0.0
+println("Sine of 0.0 is", sin(angle))
+println("Cosine of 0.0 is", cos(angle))
