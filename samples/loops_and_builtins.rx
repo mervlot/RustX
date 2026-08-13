@@ -1,0 +1,36 @@
+// This program showcases loops and standard library capabilities of RustX.
+
+/* Let's start with a standard
+   three-part for-loop */
+println("Three-part loop:")
+for i := 1; i <= 5; i++ {
+    println("Iteration:", i)
+}
+
+/* Now let's try a single-condition loop */
+println("While-style loop:")
+count := 3
+for count > 0 {
+    println("Count:", count)
+    count--
+}
+
+/* Shadowing and Scoping */
+var x = "outer"
+{
+    x := "inner"
+    println("Nested scope:", x) // prints "inner"
+}
+println("Outer scope:", x) // prints "outer"
+
+/* Built-ins math and strings */
+msg := "rustx is awesome"
+upperMsg := to_upper(msg)
+println("Uppercase message:", upperMsg)
+
+b := pow(2, 10)
+println("2 raised to 10 is:", b)
+
+arr := ["RustX", "is", "fast"]
+joined := join(arr, " ")
+println("Joined array:", joined)
