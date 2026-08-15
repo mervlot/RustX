@@ -1,0 +1,14 @@
+func main() {
+    s := "RustX Starter Hybrid Language"
+    println("Original string:", s)
+    println("Length:", len(s))
+    println("Upper case:", to_upper(s))
+    println("Contains 'Starter':", contains(s, "Starter"))
+
+    arr := split(s, " ")
+    println("Split into words:", arr)
+    println("Joined back with '-':", join(arr, "-"))
+
+    println("Absolute value of -42:", abs(-42))
+    println("2 raised to 10:", pow(2, 10))
+}
