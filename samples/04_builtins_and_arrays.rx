@@ -1,0 +1,14 @@
+arr := ["rust", "go", "rustx"]
+println("Array length:", len(arr))
+println("First element:", arr[0])
+
+joined := join(arr, ", ")
+println("Joined string:", joined)
+
+upper := to_upper(joined)
+println("Upper case:", upper)
+
+filename := "test_output.txt"
+write_file(filename, "Written by RustX Starter stdlib!")
+content := read_file(filename)
+println("File content:", content)
