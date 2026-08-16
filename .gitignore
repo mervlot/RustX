@@ -1,0 +1,13 @@
+# Binaries
+rustx
+*.exe
+*.exe?
+*.dll
+*.so
+*.dylib
+
+# Test output files
+test_output.txt
+
+# Output log files
+*.log
