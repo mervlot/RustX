@@ -1,0 +1,18 @@
+func main() {
+    println("--- Control Flow & Loops ---")
+    var sum = 0
+    for i := 1; i <= 5; i++ {
+        sum = sum + i
+        println(i)
+    }
+    println("Sum of 1 to 5:")
+    println(sum)
+
+    println("--- Standard Library String & Math ---")
+    msg := "RustX Starter"
+    println(to_upper(msg))
+    println(to_lower(msg))
+    println(contains(msg, "Rust"))
+    println(abs(-100))
+    println(pow(2, 3))
+}
