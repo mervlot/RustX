@@ -1,0 +1,14 @@
+println("--- Standard Library Demo ---")
+
+name := "RustX Starter"
+println("Uppercase:", to_upper(name))
+println("Contains 'Starter'?:", contains(name, "Starter"))
+
+val := -42.5
+println("Absolute value of -42.5:", abs(val))
+println("2 raised to 10:", pow(2, 10))
+
+file_path := "test_output.tmp"
+write_file(file_path, "Saved from RustX!")
+content := read_file(file_path)
+println("Read back from file:", content)
