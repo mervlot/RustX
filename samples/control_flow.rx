@@ -1,0 +1,13 @@
+println("--- Loop Demo ---")
+
+println("For loop counting 0 to 4:")
+for i := 0; i < 5; i++ {
+    println("i =", i)
+}
+
+println("\nWhile loop counting down from 3:")
+count := 3
+while count > 0 {
+    println("count =", count)
+    count--
+}
