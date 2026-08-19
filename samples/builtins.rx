@@ -1,0 +1,15 @@
+func main() {
+    msg := "RustX Starter Programming Language"
+    println("Original:", msg)
+    println("Upper:", to_upper(msg))
+    println("Lower:", to_lower(msg))
+    println("Length:", len(msg))
+    println("Contains 'Starter':", contains(msg, "Starter"))
+
+    arr := [10, 20, 30, 40]
+    println("Array:", arr)
+    println("Array len:", len(arr))
+
+    println("Math pow(2, 8):", pow(2, 8))
+    println("Math abs(-42):", abs(-42))
+}
