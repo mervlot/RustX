@@ -1,0 +1,17 @@
+var count = 0
+name := "RustX"
+
+if name == "RustX" {
+    println("Language initialized:", name)
+} else {
+    println("Unknown language")
+}
+
+for i := 0; i < 5; i++ {
+    println("Loop count:", i)
+}
+
+while count < 3 {
+    println("While count:", count)
+    count++
+}

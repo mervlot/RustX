@@ -1,0 +1,12 @@
+func main() {
+    str := "Hello, RustX Starter!"
+    println("Length:", len(str))
+    println("Upper:", to_upper(str))
+    println("Contains 'RustX':", contains(str, "RustX"))
+    println("Abs(-15):", abs(-15))
+    println("Pow(2, 3):", pow(2, 3))
+
+    write_file("test_out.txt", "RustX sample file output")
+    content := read_file("test_out.txt")
+    println("Read content:", content)
+}
