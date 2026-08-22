@@ -1,0 +1,20 @@
+func main() {
+    name := "RustX"
+
+    if name == "RustX" {
+        println("Language initialized successfully!")
+    }
+
+    println("Counting from 0 to 4:")
+    for i := 0; i < 5; i++ {
+        println("i =", i)
+    }
+
+    println("Math builtins:")
+    println("abs(-15) =", abs(-15))
+    println("pow(2, 3) =", pow(2, 3))
+
+    println("String builtins:")
+    s := "hello rustx"
+    println("Upper:", to_upper(s))
+}
