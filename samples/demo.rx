@@ -1,0 +1,18 @@
+name := "RustX"
+
+if name == "RustX" {
+    println("Language initialized")
+}
+
+var age = 16
+println("Age:", age)
+
+println("Counting up to 5:")
+for i := 1; i <= 5; i++ {
+    println("i =", i)
+}
+
+println("String manipulation:")
+msg := "rustx starter"
+println("Uppercase:", to_upper(msg))
+println("Length:", len(msg))
