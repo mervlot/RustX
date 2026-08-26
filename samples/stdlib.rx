@@ -1,0 +1,21 @@
+func main() {
+    println("--- Standard Library Demo ---");
+
+    // String operations
+    str := "RustX Starter Language";
+    println("Original string:", str);
+    println("Length:", len(str));
+    println("Uppercase:", to_upper(str));
+    println("Lowercase:", to_lower(str));
+    println("Contains 'Starter':", contains(str, "Starter"));
+
+    // Math operations
+    println("Abs(-15):", abs(-15));
+    println("Pow(2, 3):", pow(2, 3));
+
+    // File I/O operations
+    testFile := "temp_demo.txt";
+    write_file(testFile, "Hello from RustX filesystem built-in!");
+    content := read_file(testFile);
+    println("Read file content:", content);
+}
