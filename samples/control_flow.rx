@@ -1,0 +1,22 @@
+func main() {
+    println("--- Control Flow Demo ---");
+
+    name := "RustX";
+    if name == "RustX" {
+        println("Language initialized:", name);
+    } else {
+        println("Unknown language");
+    }
+
+    println("--- While Loop ---");
+    counter := 0;
+    while counter < 3 {
+        println("Count:", counter);
+        counter++;
+    }
+
+    println("--- For Loop ---");
+    for i := 0; i < 5; i++ {
+        println("Loop index:", i);
+    }
+}
