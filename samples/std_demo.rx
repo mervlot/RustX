@@ -1,0 +1,19 @@
+msg := "hello rustx starter"
+
+println("Original:", msg)
+println("Upper:", to_upper(msg))
+println("Contains 'rustx':", contains(msg, "rustx"))
+
+arr := split(msg, " ")
+println("Split count:", len(arr))
+
+joined := join(arr, "-")
+println("Joined:", joined)
+
+println("Math abs(-15):", abs(-15))
+println("Math pow(2, 3):", pow(2, 3))
+
+tmp_path := "test_out.tmp"
+write_file(tmp_path, "RustX standard library file write success")
+read_back := read_file(tmp_path)
+println("File Read Back:", read_back)
