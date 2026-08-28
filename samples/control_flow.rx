@@ -1,0 +1,21 @@
+func main() {
+    println("--- Testing While Loop ---")
+    i := 0
+    while i < 5 {
+        println("i =", i)
+        i++
+    }
+
+    println("--- Testing For Loop ---")
+    for j := 1; j <= 5; j++ {
+        println("j =", j)
+    }
+
+    println("--- Testing If/Else ---")
+    name := "RustX"
+    if name == "RustX" {
+        println("Language initialized successfully!")
+    } else {
+        println("Unknown language")
+    }
+}
