@@ -1,0 +1,18 @@
+func main() {
+    println("--- String Builtins ---")
+    msg := "Hello RustX World"
+    println("Length:", len(msg))
+    println("Contains RustX:", contains(msg, "RustX"))
+    println("Upper:", to_upper(msg))
+    println("Lower:", to_lower(msg))
+
+    println("--- Math Builtins ---")
+    println("Abs(-15):", abs(-15))
+    println("Pow(2, 8):", pow(2, 8))
+    println("Sin(0):", sin(0))
+
+    println("--- Filesystem Builtins ---")
+    testFile := "sample_output.txt"
+    write_file(testFile, "Written from RustX Starter stdlib demo")
+    println("File contents:", read_file(testFile))
+}
