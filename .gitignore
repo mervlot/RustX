@@ -1,0 +1,11 @@
+# Binaries
+/rustx
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Output / Test artifacts
+*.test
+*.prof
