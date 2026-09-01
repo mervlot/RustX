@@ -1,0 +1,12 @@
+func main() {
+    println("--- Loop Demo ---")
+    for i := 0; i < 5; i++ {
+        println("i =", i)
+    }
+
+    println("--- Math & String Demo ---")
+    message := "RustX Starter Hybrid Language"
+    println("Length of message:", len(message))
+    println("Uppercase:", to_upper(message))
+    println("Pow(2, 8) =", pow(2, 8))
+}
