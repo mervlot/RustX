@@ -1,0 +1,13 @@
+// Standard Library Demonstration
+msg := "rustx starter language"
+println("Uppercase:", to_upper(msg))
+println("Length:", len(msg))
+println("Contains 'starter':", contains(msg, "starter"))
+
+println("Absolute of -42:", abs(-42))
+println("2^10:", pow(2, 10))
+
+// File operations
+write_file("test.tmp", "Hello from RustX filesystem!")
+content := read_file("test.tmp")
+println("File content read:", content)

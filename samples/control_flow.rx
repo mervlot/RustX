@@ -1,0 +1,9 @@
+name := "RustX"
+
+if name == "RustX" {
+    println("Language initialized successfully!")
+}
+
+for i := 0; i < 5; i++ {
+    println("Iteration:", i)
+}
