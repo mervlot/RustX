@@ -1,0 +1,16 @@
+func main() {
+    name := "RustX"
+    if name == "RustX" {
+        println("Language initialized:", name)
+    }
+
+    var count = 0
+    while count < 3 {
+        println("While loop count:", count)
+        count++
+    }
+
+    for i := 0; i < 5; i++ {
+        println("For loop i:", i)
+    }
+}
