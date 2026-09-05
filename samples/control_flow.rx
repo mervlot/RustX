@@ -1,0 +1,17 @@
+func main() {
+    println("=== RustX Control Flow & Loop Demo ===")
+
+    var sum = 0
+    for i := 0; i < 5; i++ {
+        sum = sum + i
+        println("i:", i, "sum:", sum)
+    }
+
+    count := 3
+    while count > 0 {
+        println("Countdown:", count)
+        count--
+    }
+
+    println("Done!")
+}

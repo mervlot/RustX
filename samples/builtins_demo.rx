@@ -1,0 +1,16 @@
+func main() {
+    println("=== RustX Builtins & Strings Demo ===")
+
+    msg := "Hello, World!"
+    println("Original:", msg)
+    println("Length:", len(msg))
+    println("Upper:", to_upper(msg))
+    println("Lower:", to_lower(msg))
+    println("Contains 'World':", contains(msg, "World"))
+
+    arr := split(msg, ", ")
+    println("Joined again:", join(arr, " - "))
+
+    println("Absolute of -42:", abs(-42))
+    println("2^10:", pow(2, 10))
+}
