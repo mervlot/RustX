@@ -1,0 +1,14 @@
+func main() {
+    msg := "Hello, RustX Starter language!"
+    println("Original message:", msg)
+    println("Uppercase:", to_upper(msg))
+    println("Lowercase:", to_lower(msg))
+    println("Length:", len(msg))
+
+    parts := split("apple,banana,cherry", ",")
+    println("First fruit:", parts[0])
+    println("Joined again:", join(parts, " - "))
+
+    println("Math abs(-15):", abs(-15))
+    println("Math pow(2, 8):", pow(2, 8))
+}
