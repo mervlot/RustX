@@ -1,0 +1,32 @@
+func main() {
+    name := "RustX Starter"
+    var version float = 0.1
+
+    if name == "RustX Starter" {
+        println("Language initialized successfully!")
+    }
+
+    println("Language:", name)
+    println("Version:", version)
+
+    // Array manipulation
+    fruits := ["apple", "banana", "cherry"]
+    println("Fruit count:", len(fruits))
+    println("First fruit:", fruits[0])
+
+    // String manipulation
+    sentence := "Hello RustX World"
+    println("Uppercase:", to_upper(sentence))
+    println("Contains 'RustX':", contains(sentence, "RustX"))
+
+    // Math functions
+    println("Absolute value of -42:", abs(-42))
+    println("2^10 = ", pow(2, 10))
+
+    // For loop
+    var total = 0
+    for i := 1; i <= 10; i++ {
+        total = total + i
+    }
+    println("Sum 1..10:", total)
+}
