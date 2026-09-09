@@ -1,0 +1,19 @@
+func main() {
+    println("--- Variables & Control Flow ---")
+    name := "RustX"
+    var version = "v0.1.0"
+
+    if name == "RustX" {
+        println("Language initialized:", name, version)
+    }
+
+    println("--- For Loop Counter ---")
+    for i := 0; i < 5; i++ {
+        println("i =", i)
+    }
+
+    println("--- Math & String Builtins ---")
+    str := "rustx starter"
+    println("Upper:", to_upper(str))
+    println("Pow(2, 3):", pow(2, 3))
+}
