@@ -1,0 +1,21 @@
+func main() {
+    println("--- Variables & Operators ---")
+    var age int = 16
+    name := "Muhammad"
+    println("Name:", name, "| Age:", age)
+
+    println("--- Loop & Conditionals ---")
+    var sum = 0
+    for i := 1; i <= 5; i++ {
+        sum = sum + i
+    }
+    println("Sum of 1 to 5:", sum)
+
+    println("--- Strings & Math Builtins ---")
+    msg := "rustx language starter"
+    upperMsg := to_upper(msg)
+    println("Uppercase:", upperMsg)
+
+    squared := pow(2, 8)
+    println("2^8 =", squared)
+}
