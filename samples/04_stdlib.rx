@@ -1,0 +1,16 @@
+// Standard Library Functions in RustX Starter
+
+func main() {
+    msg := "hello rustx starter"
+    println("Original:", msg)
+    println("Upper:", to_upper(msg))
+    println("Length:", len(msg))
+    println("Contains 'rustx':", contains(msg, "rustx"))
+
+    println("Absolute of -42:", abs(-42))
+    println("2 ^ 10:", pow(2, 10))
+
+    write_file("test_output.txt", "RustX Stored Data")
+    data := read_file("test_output.txt")
+    println("Read back from file:", data)
+}
