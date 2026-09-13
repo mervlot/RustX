@@ -1,0 +1,5 @@
+// Hello World in RustX Starter
+
+func main() {
+    println("Hello, RustX Starter!")
+}
