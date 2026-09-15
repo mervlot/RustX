@@ -1,0 +1,16 @@
+func main() {
+    message := "RustX Starter Programming Language"
+
+    println("Original:", message)
+    println("Uppercase:", to_upper(message))
+    println("Length:", len(message))
+    println("Contains 'Starter':", contains(message, "Starter"))
+
+    println("2 ^ 8 =", pow(2, 8))
+    println("Abs(-100) =", abs(-100))
+
+    // Write and Read File
+    write_file("test_output.txt", "RustX File System Integration Test")
+    content := read_file("test_output.txt")
+    println("File Content Read:", content)
+}

@@ -1,0 +1,6 @@
+# Compiled binary
+rustx
+rustx.exe
+
+# Output files
+test_output.txt
