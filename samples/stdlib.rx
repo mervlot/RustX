@@ -1,0 +1,9 @@
+msg := "  hello rustx starter  "
+println("Length:", len(msg))
+println("Uppercase:", to_upper(msg))
+
+println("Absolute value of -42:", abs(-42))
+println("2^10 = ", pow(2, 10))
+
+write_file("temp_demo.txt", "RustX Stored Data")
+println("File read back:", read_file("temp_demo.txt"))
