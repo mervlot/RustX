@@ -1,0 +1,7 @@
+greeting := "hello world"
+println("Upper:", to_upper(greeting))
+println("Len:", len(greeting))
+
+nums := [10, 20, 30, 40]
+println("First elem:", nums[0])
+println("Array len:", len(nums))
