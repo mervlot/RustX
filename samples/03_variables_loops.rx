@@ -1,0 +1,18 @@
+var count = 0
+name := "RustX"
+
+if name == "RustX" {
+    println("Language initialized:", name)
+}
+
+println("3-part for loop:")
+for i := 0; i < 5; i++ {
+    println("i =", i)
+}
+
+println("While loop count down:")
+x := 3
+while x > 0 {
+    println("x =", x)
+    x--
+}
