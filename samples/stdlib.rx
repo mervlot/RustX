@@ -1,0 +1,22 @@
+// stdlib.rx - Demonstrates built-in standard library functions
+
+func main() {
+    println("--- String Operations ---")
+    str := "RustX Starter Programming Language"
+    println("Original:", str)
+    println("Upper:", to_upper(str))
+    println("Lower:", to_lower(str))
+    println("Length:", len(str))
+    println("Contains 'Starter':", contains(str, "Starter"))
+
+    println("--- Math Operations ---")
+    println("Abs(-15):", abs(-15))
+    println("Pow(2, 8):", pow(2, 8))
+    println("Sin(0):", sin(0))
+
+    println("--- Filesystem Operations ---")
+    tempFile := "sample_output.txt"
+    write_file(tempFile, "Hello from RustX File I/O!")
+    content := read_file(tempFile)
+    println("Read from file:", content)
+}

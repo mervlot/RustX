@@ -1,0 +1,23 @@
+// control_flow.rx - Demonstrates for-loops, while-loops, and conditionals
+
+func main() {
+    println("--- For Loop ---")
+    for i := 0; i < 5; i++ {
+        println("i =", i)
+    }
+
+    println("--- While Loop ---")
+    var count = 3
+    while count > 0 {
+        println("count =", count)
+        count--
+    }
+
+    println("--- Conditionals ---")
+    name := "RustX"
+    if name == "RustX" {
+        println("Language initialized successfully!")
+    } else {
+        println("Unknown language")
+    }
+}
