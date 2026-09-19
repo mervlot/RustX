@@ -1,0 +1,10 @@
+msg := "Hello RustX Starter"
+println("Uppercase:", to_upper(msg))
+println("Length:", len(msg))
+
+println("2^10 =", pow(2, 10))
+println("abs(-42) =", abs(-42))
+
+write_file("test_output.txt", "RustX Starter File I/O Test")
+content := read_file("test_output.txt")
+println("File Content:", content)
