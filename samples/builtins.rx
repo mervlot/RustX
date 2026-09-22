@@ -1,0 +1,15 @@
+str := "Hello RustX Language"
+println("Original:", str)
+println("Uppercase:", to_upper(str))
+println("Lowercase:", to_lower(str))
+println("Length:", len(str))
+println("Contains RustX:", contains(str, "RustX"))
+
+arr := [10, 20, 30]
+println("Array:", arr)
+println("Array length:", len(arr))
+println("First element:", arr[0])
+
+write_file("test_output.txt", "RustX file output sample")
+content := read_file("test_output.txt")
+println("File content:", content)

@@ -1,0 +1,17 @@
+name := "RustX Starter"
+
+if name == "RustX Starter" {
+    println("Language initialized successfully!")
+}
+
+println("Counting up with for loop:")
+for i := 0; i < 5; i++ {
+    println("i =", i)
+}
+
+println("Counting down with while loop:")
+count := 3
+while count > 0 {
+    println("count =", count)
+    count--
+}
