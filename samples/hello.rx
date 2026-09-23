@@ -1,0 +1,7 @@
+// hello.rx - Demonstration of basic RustX Starter execution
+func main() {
+    println("Hello, RustX Starter!")
+    name := "Muhammad"
+    var age int = 16
+    println("Developer:", name, "Age:", age)
+}
