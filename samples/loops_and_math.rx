@@ -1,0 +1,18 @@
+// loops_and_math.rx - Loops and Standard Library math functions
+func main() {
+    println("--- Loops Demo ---")
+    for i := 0; i < 5; i++ {
+        println("i =", i);
+    }
+
+    println("--- Standard Library Math & Strings ---")
+    val := -42;
+    println("abs(-42) =", abs(val));
+    println("pow(2, 8) =", pow(2.0, 8.0));
+    println("to_upper('rustx') =", to_upper("rustx"));
+
+    // File I/O test
+    write_file("temp_test.txt", "RustX Starter File I/O works!");
+    content := read_file("temp_test.txt");
+    println("File contents:", content);
+}
