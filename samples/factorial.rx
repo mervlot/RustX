@@ -1,0 +1,12 @@
+// Sample 2: Recursive Factorial
+func factorial(n int) int {
+    if n <= 1 {
+        return 1
+    }
+    return n * factorial(n - 1)
+}
+
+func main() {
+    result := factorial(5)
+    println("Factorial of 5 is:", result)
+}
