@@ -1,0 +1,28 @@
+// Sample 3: Control Flow, Standard Library (Math, Strings, Filesystem)
+
+func main() {
+    name := "RustX Starter"
+    if name == "RustX Starter" {
+        println("Language initialized successfully!")
+    }
+
+    // Loops
+    println("Counting from 0 to 4:")
+    for i := 0; i < 5; i++ {
+        print(i)
+        print(" ")
+    }
+    println()
+
+    // Strings & Math built-ins
+    greeting := to_upper("welcome to rustx")
+    println("Uppercase:", greeting)
+
+    val := pow(2, 8)
+    println("2^8 =", val)
+
+    // Filesystem built-in
+    write_file("demo_output.txt", "RustX Starter filesystem test OK\n")
+    data := read_file("demo_output.txt")
+    print("Read from file: ", data)
+}
