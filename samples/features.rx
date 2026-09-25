@@ -1,0 +1,22 @@
+// Variables and type annotations
+var greeting string = "Welcome to RustX"
+version := 0.1
+
+println(greeting, "v", version)
+
+// Control flow
+var count = 0
+while count < 3 {
+    println("Count:", count)
+    count++
+}
+
+for i := 0; i < 5; i++ {
+    println("For loop i:", i)
+}
+
+// Built-in functions
+words := split("rustx,starter,language", ",")
+println("Joined upper:", to_upper(join(words, " - ")))
+println("Math abs(-42):", abs(-42))
+println("Math pow(2, 8):", pow(2, 8))
