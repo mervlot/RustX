@@ -1,0 +1,21 @@
+func main() {
+    name := "RustX"
+
+    if name == "RustX" {
+        println("Language initialized successfully!")
+    } else {
+        println("Unknown language")
+    }
+
+    println("Counting using for-loop:")
+    for i := 1; i <= 5; i++ {
+        println("  count:", i)
+    }
+
+    println("Counting down using while-loop:")
+    var n = 3
+    while n > 0 {
+        println("  countdown:", n)
+        n--
+    }
+}
