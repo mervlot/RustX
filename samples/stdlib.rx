@@ -1,0 +1,18 @@
+func main() {
+    msg := "RustX Starter Hybrid Language"
+    println("Original:", msg)
+    println("Upper:", to_upper(msg))
+    println("Lower:", to_lower(msg))
+    println("Length:", len(msg))
+    println("Contains 'Starter':", contains(msg, "Starter"))
+
+    parts := split(msg, " ")
+    println("Split words:", parts)
+    println("Joined back:", join(parts, " - "))
+
+    println("Absolute value of -42:", abs(-42))
+    println("2^10 power:", pow(2, 10))
+    println("Sine of 0.5:", sin(0.5))
+
+    println("Current Unix Timestamp:", now())
+}
