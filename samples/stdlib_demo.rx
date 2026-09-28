@@ -1,0 +1,26 @@
+func main() {
+    println("--- RustX Starter Standard Library Demo ---")
+
+    // String operations
+    greeting := "Hello, RustX Starter!"
+    println("Original String:", greeting)
+    println("Upper Case:", to_upper(greeting))
+    println("Lower Case:", to_lower(greeting))
+    println("Length:", len(greeting))
+
+    // Math operations
+    println("Abs(-42):", abs(-42))
+    println("Pow(2, 8):", pow(2, 8))
+
+    // Filesystem operations
+    tmpFile := "test_output.txt"
+    write_file(tmpFile, "RustX FS test successful!")
+    content := read_file(tmpFile)
+    println("File Content:", content)
+
+    // For loop demonstration
+    println("Loop count 0 to 4:")
+    for i := 0; i < 5; i++ {
+        println("i =", i)
+    }
+}
