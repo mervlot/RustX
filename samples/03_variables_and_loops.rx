@@ -1,0 +1,16 @@
+func main() {
+    var count = 0
+    name := "RustX"
+
+    println("Counting up with for loop:")
+    for i := 0; i < 5; i++ {
+        println("i =", i)
+        count = count + i
+    }
+
+    println("Total count:", count)
+
+    if name == "RustX" {
+        println("Language initialized successfully")
+    }
+}

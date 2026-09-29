@@ -1,0 +1,11 @@
+func main() {
+    msg := "Hello RustX World"
+
+    println("String length:", len(msg))
+    println("Upper case:", to_upper(msg))
+    println("Lower case:", to_lower(msg))
+    println("Contains 'RustX':", contains(msg, "RustX"))
+
+    println("Square root approximation via pow(16, 0.5):", pow(16, 0.5))
+    println("Absolute value of -42:", abs(-42))
+}
