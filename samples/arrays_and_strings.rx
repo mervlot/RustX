@@ -1,0 +1,12 @@
+func main() {
+    message := "RustX Starter Programming"
+    println("Message:", message)
+    println("Length:", len(message))
+    println("Upper:", to_upper(message))
+
+    nums := [10, 20, 30, 40]
+    println("Original array:", nums)
+    nums[2] = 99
+    println("Modified array:", nums)
+    println("Array length:", len(nums))
+}

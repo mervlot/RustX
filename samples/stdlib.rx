@@ -1,0 +1,10 @@
+func main() {
+    println("Math abs(-15):", abs(-15))
+    println("Math pow(2, 10):", pow(2, 10))
+    println("Math sin(0):", sin(0))
+
+    filePath := "test_output.txt"
+    write_file(filePath, "RustX filesystem stdlib works!")
+    content := read_file(filePath)
+    println("Read from file:", content)
+}
