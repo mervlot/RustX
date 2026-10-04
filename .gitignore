@@ -1,0 +1,5 @@
+# Binaries
+rustx
+rustx.exe
+*.exe
+*.out
