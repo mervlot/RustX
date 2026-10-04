@@ -1,0 +1,16 @@
+var name = "RustX"
+
+if name == "RustX" {
+    println("Language initialized successfully!")
+}
+
+for i := 0; i < 5; i++ {
+    println("Count:", i)
+}
+
+numbers := [10, 20, 30]
+println("First element:", numbers[0])
+println("Array length:", len(numbers))
+
+message := "hello rustx"
+println("Upper case:", to_upper(message))
