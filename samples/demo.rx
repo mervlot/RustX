@@ -1,0 +1,26 @@
+func main() {
+    println("--- Control Flow & Loops Demo ---")
+
+    var sum = 0
+    for i := 1; i <= 10; i++ {
+        sum = sum + i
+    }
+    println("Sum from 1 to 10:", sum)
+
+    name := "RustX"
+    if name == "RustX" {
+        println("Language initialized successfully")
+    } else {
+        println("Unknown language")
+    }
+
+    println("--- Standard Library Math & String Demo ---")
+    println("Absolute value of -42:", abs(-42))
+    println("2 raised to power 8:", pow(2, 8))
+    println("Uppercase string:", to_upper("rustx starter"))
+
+    msg := "apple,banana,cherry"
+    parts := split(msg, ",")
+    println("Split list item count:", len(parts))
+    println("Joined list:", join(parts, " | "))
+}
