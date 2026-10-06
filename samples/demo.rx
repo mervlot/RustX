@@ -1,0 +1,26 @@
+func main() {
+    name := "RustX"
+    var version float = 0.1
+
+    if name == "RustX" {
+        println("Language initialized:", name, "v", version)
+    }
+
+    println("Counting using for loop:")
+    for i := 1; i <= 5; i++ {
+        println("  step", i)
+    }
+
+    sum := 0
+    k := 1
+    while k <= 5 {
+        sum = sum + k
+        k++
+    }
+    println("Sum 1..5 using while loop:", sum)
+
+    message := "hello,rustx,starter"
+    parts := split(message, ",")
+    println("Joined split parts:", join(parts, " | "))
+    println("Upper case:", to_upper(name))
+}
