@@ -1,0 +1,11 @@
+func main() {
+    msg := "RustX Starter Language"
+    println("Original:", msg)
+    println("Uppercase:", to_upper(msg))
+    println("Length:", len(msg))
+    println("Contains Starter:", contains(msg, "Starter"))
+
+    val := -42.5
+    println("Absolute value:", abs(val))
+    println("2^10 =", pow(2, 10))
+}

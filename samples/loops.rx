@@ -1,0 +1,13 @@
+func main() {
+    println("For loop counting:")
+    for i := 0; i < 5; i++ {
+        println("i =", i)
+    }
+
+    println("While loop counting:")
+    var count = 3
+    while count > 0 {
+        println("count =", count)
+        count--
+    }
+}
