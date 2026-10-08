@@ -1,0 +1,28 @@
+func main() {
+    name := "RustX Starter"
+    var version = 0.1
+
+    println("Language:", name, "v" + "0.1")
+
+    var numbers = [10, 20, 30, 40, 50]
+    var sum = 0
+
+    for i := 0; i < len(numbers); i++ {
+        sum = sum + numbers[i]
+    }
+
+    println("Sum of array elements:", sum)
+
+    var count = 3
+    while count > 0 {
+        println("Countdown:", count)
+        count--
+    }
+
+    println("Uppercase test:", to_upper(name))
+    println("File write and read test...")
+
+    write_file("test_out.tmp", "Hello from RustX file system built-in!")
+    var content = read_file("test_out.tmp")
+    println("File content read:", content)
+}
