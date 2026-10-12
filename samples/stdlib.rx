@@ -1,0 +1,14 @@
+func main() {
+    msg := "Hello RustX World"
+    println("Original:", msg)
+    println("Length:", len(msg))
+    println("Uppercase:", to_upper(msg))
+    println("Contains 'RustX':", contains(msg, "RustX"))
+
+    println("Absolute value of -42:", abs(-42))
+    println("Power 2^10:", pow(2, 10))
+
+    numbers := [1, 2, 3]
+    push(numbers, 4)
+    println("Array:", numbers)
+}
