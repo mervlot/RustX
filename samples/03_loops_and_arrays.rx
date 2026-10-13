@@ -1,0 +1,15 @@
+// Sample 3: Loops and Array Manipulation
+
+func main() {
+    numbers := [10, 20, 30, 40, 50]
+
+    println("Array length:", len(numbers))
+
+    sum := 0
+    for i := 0; i < len(numbers); i++ {
+        println("Item at index", i, "is:", numbers[i])
+        sum = sum + numbers[i]
+    }
+
+    println("Total sum:", sum)
+}
