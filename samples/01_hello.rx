@@ -1,0 +1,8 @@
+// Sample 1: Hello World in RustX Starter
+
+func main() {
+    println("Hello, RustX Starter!")
+
+    name := "Muhammad"
+    println("Welcome,", name)
+}

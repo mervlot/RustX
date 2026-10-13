@@ -1,0 +1,23 @@
+// Sample 4: Standard Library (String, Math, Filesystem)
+
+func main() {
+    // String operations
+    text := "rustx starter programming language"
+    upper := to_upper(text)
+    println("Uppercase:", upper)
+
+    parts := split(text, " ")
+    println("Word count:", len(parts))
+    println("Joined:", join(parts, " -> "))
+
+    // Math operations
+    println("Absolute value of -42:", abs(-42))
+    println("2^10 = ", pow(2, 10))
+    println("Sine of 0:", sin(0))
+
+    // File I/O
+    testFile := "test_output.txt"
+    write_file(testFile, "RustX Starter filesystem test successful!")
+    content := read_file(testFile)
+    println("File contents read:", content)
+}
