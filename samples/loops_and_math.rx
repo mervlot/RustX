@@ -1,0 +1,15 @@
+func main() {
+    println("--- Loops and Math Demo ---")
+
+    var sum = 0
+    for i := 1; i <= 10; i++ {
+        sum = sum + i
+    }
+    println("Sum of 1..10 is:", sum)
+
+    val := -42.5
+    absVal := abs(val)
+    powVal := pow(2, 8)
+    println("abs(-42.5):", absVal)
+    println("pow(2, 8):", powVal)
+}

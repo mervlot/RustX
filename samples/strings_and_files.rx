@@ -1,0 +1,12 @@
+func main() {
+    greeting := "Hello, RustX Starter!"
+    println("Original:", greeting)
+    println("Uppercase:", to_upper(greeting))
+    println("Lowercase:", to_lower(greeting))
+    println("Contains 'RustX':", contains(greeting, "RustX"))
+
+    fileName := "temp_demo.txt"
+    write_file(fileName, "RustX filesystem stdlib works!")
+    content := read_file(fileName)
+    println("File contents:", content)
+}
