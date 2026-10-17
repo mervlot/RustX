@@ -1,0 +1,19 @@
+func main() {
+    println("--- Testing Standard Library ---")
+
+    // Strings
+    str := "RustX Starter Language"
+    println("Length of string:", len(str))
+    println("Contains 'Starter':", contains(str, "Starter"))
+    println("Uppercase:", to_upper(str))
+
+    // Math
+    println("Abs of -42:", abs(-42))
+    println("2^10:", pow(2, 10))
+
+    // Filesystem
+    testFile := "test_output.tmp"
+    write_file(testFile, "Hello from RustX file operations!")
+    readContent := read_file(testFile)
+    println("File contents:", readContent)
+}

@@ -1,0 +1,19 @@
+func main() {
+    println("--- Testing Control Flow ---")
+
+    var count = 0
+    println("While Loop:")
+    while count < 3 {
+        println("Count is:", count)
+        count++
+    }
+
+    println("For Loop:")
+    for i := 0; i < 5; i++ {
+        if i % 2 == 0 {
+            println(i, "is even")
+        } else {
+            println(i, "is odd")
+        }
+    }
+}
