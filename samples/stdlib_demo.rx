@@ -1,0 +1,16 @@
+func main() {
+    name := "RustX Starter"
+
+    if contains(name, "RustX") {
+        println("Found RustX in name!")
+    }
+
+    upperName := to_upper(name)
+    println("Uppercase:", upperName)
+
+    parts := split(name, " ")
+    println("Joined again:", join(parts, " - "))
+
+    println("Absolute value of -42:", abs(-42))
+    println("2 raised to power 8:", pow(2, 8))
+}
