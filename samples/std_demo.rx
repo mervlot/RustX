@@ -1,0 +1,16 @@
+func main() {
+    println("--- Math ---")
+    println("abs(-15.5):", abs(-15.5))
+    println("pow(2, 8):", pow(2, 8))
+
+    println("\n--- Strings ---")
+    greeting := "Hello, RustX Starter!"
+    println("len:", len(greeting))
+    println("upper:", to_upper(greeting))
+    println("contains 'RustX':", contains(greeting, "RustX"))
+
+    println("\n--- Filesystem ---")
+    write_file("test_out.tmp", "RustX IO Works!\n")
+    data := read_file("test_out.tmp")
+    println("read back file content:", data)
+}
