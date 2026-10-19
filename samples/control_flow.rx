@@ -1,0 +1,21 @@
+func main() {
+    println("--- If / Else ---")
+    age := 16
+    if age >= 18 {
+        println("Adult")
+    } else {
+        println("Minor")
+    }
+
+    println("\n--- While Loop ---")
+    count := 0
+    while count < 3 {
+        println("while iteration:", count)
+        count++
+    }
+
+    println("\n--- For Loop ---")
+    for i := 0; i < 5; i++ {
+        println("for index:", i)
+    }
+}
