@@ -1,0 +1,26 @@
+func main() {
+    println("--- Loops and Arithmetic ---")
+    sum := 0
+    for i := 1; i <= 10; i++ {
+        sum = sum + i
+    }
+    println("Sum of 1 to 10:", sum)
+
+    println("--- Strings and Array Operations ---")
+    message := "RustX Starter Programming Language"
+    println("Message:", message)
+    println("Upper case:", to_upper(message))
+
+    words := split(message, " ")
+    println("Word count:", len(words))
+
+    println("--- Math Builtins ---")
+    println("Absolute value of -42:", abs(-42))
+    println("2^10:", pow(2, 10))
+
+    println("--- File I/O ---")
+    testFile := "sample_output.tmp"
+    write_file(testFile, "Hello from RustX File I/O!")
+    content := read_file(testFile)
+    println("Read back content:", content)
+}
