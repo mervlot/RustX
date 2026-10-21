@@ -1,0 +1,10 @@
+var count = 0
+name := "RustX"
+
+if name == "RustX" {
+    println("Language initialized")
+}
+
+for i := 1; i <= 5; i++ {
+    println("Count:", i)
+}

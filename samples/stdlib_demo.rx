@@ -1,0 +1,9 @@
+msg := "rustx starter programming language"
+upperMsg := to_upper(msg)
+println("Upper:", upperMsg)
+
+words := split(msg, " ")
+println("Word count:", len(words))
+
+println("Absolute value of -42:", abs(-42))
+println("2^10 =", pow(2, 10))
