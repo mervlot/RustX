@@ -1,0 +1,20 @@
+// Standard Library Demo in RustX Starter
+
+func main() {
+    // Strings
+    str := "RustX Starter Programming Language"
+    println("Original:", str)
+    println("Upper:", to_upper(str))
+    println("Lower:", to_lower(str))
+    println("Contains 'Starter':", contains(str, "Starter"))
+
+    // Math
+    println("2^10 =", pow(2, 10))
+    println("abs(-42) =", abs(-42))
+
+    // File I/O
+    testFile := "temp_test.txt"
+    write_file(testFile, "Hello from RustX file system built-in!")
+    content := read_file(testFile)
+    println("File contents:", content)
+}
