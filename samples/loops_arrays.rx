@@ -1,0 +1,14 @@
+// Loops and Arrays in RustX Starter
+
+func main() {
+    var numbers = [10, 20, 30, 40, 50]
+
+    println("Array length:", len(numbers))
+
+    var sum = 0
+    for i := 0; i < len(numbers); i++ {
+        sum = sum + numbers[i]
+    }
+
+    println("Sum of array elements:", sum)
+}
