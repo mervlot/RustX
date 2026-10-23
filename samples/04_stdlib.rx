@@ -1,0 +1,22 @@
+func main() {
+    println("--- Standard Library Demo ---")
+
+    // String functions
+    msg := "Hello, RustX Starter!"
+    println("Upper:", to_upper(msg))
+    println("Contains 'RustX':", contains(msg, "RustX"))
+
+    parts := split(msg, " ")
+    println("Joined with hyphen:", join(parts, "-"))
+
+    // Math functions
+    println("abs(-42) =", abs(-42))
+    println("pow(2, 8) =", pow(2, 8))
+    println("sin(3.14159 / 2) =", sin(3.14159 / 2))
+
+    // Filesystem functions
+    testFile := "temp_demo.txt"
+    write_file(testFile, "RustX standard library write_file test\n")
+    content := read_file(testFile)
+    println("File contents:", content)
+}

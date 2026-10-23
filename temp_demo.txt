@@ -1,0 +1,1 @@
+RustX standard library write_file test
