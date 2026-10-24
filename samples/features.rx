@@ -1,0 +1,15 @@
+name := "RustX"
+
+if name == "RustX" {
+    println("Language initialized successfully!")
+}
+
+var count = 0
+for i := 0; i < 5; i++ {
+    count = count + i
+}
+println("Sum 0..4 =", count)
+
+message := "Hello RustX"
+println("Upper:", to_upper(message))
+println("Square root of 16:", pow(16, 0.5))
