@@ -1,0 +1,17 @@
+func main() {
+    println("--- String Operations ---")
+    msg := "hello rustx starter"
+    println("Upper:", to_upper(msg))
+    println("Length:", len(msg))
+    println("Contains 'rustx':", contains(msg, "rustx"))
+
+    println("--- Math Operations ---")
+    println("Absolute of -42:", abs(-42))
+    println("2^10:", pow(2, 10))
+
+    println("--- Filesystem Operations ---")
+    testFile := "test_output.tmp"
+    write_file(testFile, "Hello File IO in RustX Starter!")
+    content := read_file(testFile)
+    println("Read content:", content)
+}
