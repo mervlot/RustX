@@ -1,0 +1,9 @@
+func main() {
+    println("Upper string:", to_upper("rustx starter"))
+    println("Absolute value:", abs(-100))
+    println("Power 2^10:", pow(2, 10))
+
+    write_file("test_out.txt", "Hello from RustX Stdlib!")
+    content := read_file("test_out.txt")
+    println("File contents:", content)
+}

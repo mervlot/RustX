@@ -1,0 +1,16 @@
+func main() {
+    var name string = "RustX"
+    age := 16
+
+    if name == "RustX" && age >= 16 {
+        println("Language initialized for", name, "with age", age)
+    } else {
+        println("Initialization failed")
+    }
+
+    sum := 0
+    for i := 1; i <= 5; i++ {
+        sum = sum + i
+    }
+    println("Sum 1..5:", sum)
+}
