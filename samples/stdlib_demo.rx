@@ -1,0 +1,13 @@
+func main() {
+    message := "RustX Starter Language"
+    println("Upper:", str_upper(message))
+    println("Length:", len(message))
+
+    arr := [10, 20, 30]
+    println("Array length:", len(arr))
+    arr[0] = 99
+    println("Updated arr[0]:", arr[0])
+
+    println("Math sqrt(16) =", math_sqrt(16))
+    println("Timestamp:", time_now())
+}
