@@ -1,0 +1,14 @@
+func main() {
+    name := "RustX"
+
+    if name == "RustX" {
+        println("Language initialized successfully")
+    } else {
+        println("Unknown language")
+    }
+
+    println("Counting from 0 to 4:")
+    for i := 0; i < 5; i++ {
+        println("  i =", i)
+    }
+}
