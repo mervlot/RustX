@@ -1,0 +1,19 @@
+func main() {
+    println("--- String Library ---")
+    greeting := "hello rustx"
+    println("Original:", greeting)
+    println("Uppercase:", str_upper(greeting))
+    println("Contains 'rustx':", str_contains(greeting, "rustx"))
+
+    println("--- Math Library ---")
+    println("Abs(-15):", abs(-15))
+    println("Pow(2, 4):", pow(2, 4))
+    println("Sqrt(16):", sqrt(16))
+
+    println("--- Filesystem Library ---")
+    testFile := "sample_test.txt"
+    write_file(testFile, "RustX filesystem stdlib working!\n")
+    if file_exists(testFile) {
+        println("File content:", read_file(testFile))
+    }
+}
