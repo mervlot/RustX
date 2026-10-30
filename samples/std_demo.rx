@@ -1,0 +1,15 @@
+println("=== Standard Library Demo ===")
+
+msg := "Hello RustX World"
+println("Uppercase:", str_to_upper(msg))
+println("Lowercase:", str_to_lower(msg))
+println("Contains 'RustX':", str_contains(msg, "RustX"))
+
+println("Square root of 16:", sqrt(16))
+println("2^10 power:", pow(2, 10))
+
+println("Current timestamp (ms):", now_ms())
+
+tmpFile := "temp_test.txt"
+write_file(tmpFile, "RustX filesystem std test")
+println("File content:", read_file(tmpFile))

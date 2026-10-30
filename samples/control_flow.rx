@@ -1,0 +1,15 @@
+name := "RustX"
+
+if name == "RustX" {
+    println("Language initialized")
+}
+
+var count = 0
+while count < 3 {
+    println("Count:", count)
+    count++
+}
+
+for i := 0; i < 3; i++ {
+    println("For loop index:", i)
+}
