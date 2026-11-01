@@ -1,0 +1,22 @@
+// Standard Library demonstration: strings, math, time, filesystem
+name := "RustX Starter"
+println("Language:", name)
+println("Uppercase:", str_to_upper(name))
+println("Lowercase:", str_to_lower(name))
+println("Contains 'Rust'?", str_contains(name, "Rust"))
+
+// Math
+num := 25
+sqrtVal := math_sqrt(num)
+println("Square root of 25 is:", sqrtVal)
+println("2^8 is:", math_pow(2, 8))
+
+// Time
+now := time_now_unix()
+println("Current Unix Timestamp:", now)
+
+// Filesystem
+filePath := "temp_sample.txt"
+write_file(filePath, "Testing RustX filesystem write and read!\n")
+fileContent := read_file(filePath)
+print("File content: ", fileContent)
