@@ -1,0 +1,28 @@
+func main() {
+    // Strings
+    str := "  rustx starter language  "
+    trimmed := str_trim(str)
+    upper := str_upper(trimmed)
+    println("Original:", str)
+    println("Trimmed:", trimmed)
+    println("Upper:", upper)
+    println("Contains 'START':", str_contains(upper, "START"))
+    println("Length:", len(trimmed))
+
+    // Math
+    val := 16
+    sqrtVal := math_sqrt(val)
+    println("Sqrt of 16:", sqrtVal)
+    println("2^5:", math_pow(2, 5))
+    println("Min of 10 and 20:", math_min(10, 20))
+    println("Max of 10 and 20:", math_max(10, 20))
+
+    // Time
+    println("Current Unix Time:", time_now())
+
+    // File I/O
+    testFile := "test_output.txt"
+    write_file(testFile, "RustX filesystem support works!")
+    readContent := read_file(testFile)
+    println("Read from file:", readContent)
+}
