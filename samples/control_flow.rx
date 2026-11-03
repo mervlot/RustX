@@ -1,0 +1,26 @@
+// control_flow.rx - Control flow in RustX (if/else, while, for)
+
+score := 85
+
+// If - Else
+if score >= 90 {
+    println("Grade: A")
+} else if score >= 80 {
+    println("Grade: B")
+} else {
+    println("Grade: C or below")
+}
+
+// While loop
+println("--- While Loop ---")
+var countdown = 3
+while countdown > 0 {
+    println("Countdown:", countdown)
+    countdown--
+}
+
+// For loop (3-part)
+println("--- For Loop ---")
+for i := 0; i < 5; i++ {
+    println("Iteration:", i)
+}

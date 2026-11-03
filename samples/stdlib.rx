@@ -1,0 +1,33 @@
+// stdlib.rx - Standard library builtins in RustX
+
+// Strings
+msg := "  hello rustx  "
+trimmed := trim(msg)
+upper := to_upper(trimmed)
+println("Original:", msg)
+println("Trimmed:", trimmed)
+println("Upper:", upper)
+println("Contains 'RUST':", contains(upper, "RUST"))
+
+// Arrays
+arr := [10, 20, 30]
+arr = push(arr, 40)
+println("Array:", arr)
+println("Array len:", len(arr))
+println("First:", first(arr))
+println("Last:", last(arr))
+
+// Math
+println("abs(-50):", abs(-50))
+println("max(100, 250):", max(100, 250))
+println("min(100, 250):", min(100, 250))
+println("sqrt(144):", sqrt(144))
+println("pow(2, 8):", pow(2, 8))
+
+// Time
+println("Timestamp:", time_now())
+
+// File System
+write_file("test_out.txt", "RustX File I/O works!")
+content := read_file("test_out.txt")
+println("Read from file:", content)
