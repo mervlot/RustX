@@ -1,0 +1,25 @@
+// variables.rx - Variables and Data Types in RustX
+
+// Shorthand initialization
+name := "RustX"
+version := 0.1
+isAwesome := true
+
+// Var declarations
+var count = 10
+var title string = "Programming Language"
+
+println("Language:", name)
+println("Title:", title)
+println("Version:", version)
+println("Is Awesome:", isAwesome)
+
+// Arithmetic operations
+a := 15
+b := 4
+
+println("a + b =", a + b)
+println("a - b =", a - b)
+println("a * b =", a * b)
+println("a / b =", a / b)
+println("a % b =", a % b)

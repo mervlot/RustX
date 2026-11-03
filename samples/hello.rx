@@ -1,0 +1,5 @@
+// hello.rx - Basic Hello World program in RustX
+
+func main() {
+    println("Hello, RustX Starter!")
+}
