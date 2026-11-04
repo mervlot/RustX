@@ -1,0 +1,13 @@
+func main() {
+    greeting := "RustX Starter"
+    println("Original:", greeting)
+    println("Upper:", to_upper(greeting))
+    println("Lower:", to_lower(greeting))
+    println("Length:", len(greeting))
+    println("Contains 'Rust':", str_contains(greeting, "Rust"))
+
+    val := -25
+    println("Absolute of -25:", abs(val))
+    println("Sqrt of 25:", sqrt(25.0))
+    println("Pow 2^8:", pow(2.0, 8.0))
+}
