@@ -1,0 +1,18 @@
+// Math builtins
+println("sqrt(64) =", sqrt(64))
+println("pow(2, 8) =", pow(2, 8))
+println("max(10, 42) =", max(10, 42))
+println("min(10, 42) =", min(10, 42))
+
+// String builtins
+msg := "  RustX Starter hybrid language  "
+trimmed := str_trim(msg)
+upper := str_upper(trimmed)
+println("Trimmed & Upper:", upper)
+println("Contains 'HYBRID':", str_contains(upper, "HYBRID"))
+
+// File IO builtins
+test_file := "test_output.txt"
+write_file(test_file, "RustX filesystem support works!\n")
+content := read_file(test_file)
+print("File read content: ", content)
