@@ -1,0 +1,23 @@
+// Control Flow and Loops in RustX Starter
+
+var x = 10
+if x > 5 {
+    println("x is greater than 5")
+} else {
+    println("x is not greater than 5")
+}
+
+println("--- While Loop ---")
+count := 0
+while count < 3 {
+    println("count is", count)
+    count++
+}
+
+println("--- For Loop ---")
+sum := 0
+for i := 0; i < 5; i++ {
+    println("i =", i)
+    sum = sum + i
+}
+println("Sum 0..4 =", sum)

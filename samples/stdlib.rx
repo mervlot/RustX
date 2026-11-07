@@ -1,0 +1,24 @@
+// RustX Standard Library Demonstration
+
+// Strings
+msg := "Hello RustX"
+println("Length:", len(msg))
+println("Upper:", str_to_upper(msg))
+println("Lower:", str_to_lower(msg))
+println("Contains 'RustX':", str_contains(msg, "RustX"))
+
+// Math
+println("Abs of -42:", math_abs(-42))
+println("Max(10, 20):", math_max(10, 20))
+println("Min(10, 20):", math_min(10, 20))
+println("Pow(2, 8):", math_pow(2, 8))
+println("Sqrt(16):", math_sqrt(16))
+
+// Time
+println("Timestamp:", time_now())
+
+// Filesystem basics
+test_file := "test_output.txt"
+write_file(test_file, "RustX Starter filesystem test!\n")
+read_content := read_file(test_file)
+print("File content: ", read_content)
