@@ -1,0 +1,24 @@
+func main() {
+    // Strings standard library
+    msg := "   RustX Hybrid Systems Language   "
+    clean := str_trim(msg)
+    println("Trimmed:", clean)
+    println("Uppercase:", str_upper(clean))
+    println("Contains 'Hybrid':", str_contains(clean, "Hybrid"))
+
+    // Math standard library
+    println("Math sqrt of 16:", math_sqrt(16))
+    println("Math 2^8:", math_pow(2, 8))
+    println("Math min(15, 42):", math_min(15, 42))
+
+    // Time
+    println("Current Unix timestamp:", time_now())
+
+    // Filesystem
+    tempFile := "test_output.txt"
+    write_file(tempFile, "RustX filesystem support works!")
+    if file_exists(tempFile) {
+        content := read_file(tempFile)
+        println("Read from file:", content)
+    }
+}
