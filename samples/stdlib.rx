@@ -1,0 +1,25 @@
+// Sample 4: Standard Library built-ins (math, strings, filesystem)
+
+func main() {
+    println("--- Math Built-ins ---")
+    println("abs(-15) =", abs(-15))
+    println("max(10, 42, 5) =", max(10, 42, 5))
+    println("min(10, 42, 5) =", min(10, 42, 5))
+    println("sqrt(16) =", sqrt(16))
+    println("pow(2, 8) =", pow(2, 8))
+
+    println("--- String Built-ins ---")
+    greeting := "  hello rustx  "
+    println("to_upper:", to_upper(trim(greeting)))
+    println("contains 'rustx':", contains(greeting, "rustx"))
+
+    parts := split("apple,banana,cherry", ",")
+    println("Array len:", len(parts))
+    println("join:", join(parts, " - "))
+
+    println("--- File I/O ---")
+    testFile := "sample_temp.txt"
+    write_file(testFile, "RustX Starter filesystem write test")
+    content := read_file(testFile)
+    println("Read back:", content)
+}

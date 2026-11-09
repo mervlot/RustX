@@ -1,0 +1,13 @@
+// Sample 2: Recursion and functions
+
+func factorial(n int) int {
+    if n <= 1 {
+        return 1
+    }
+    return n * factorial(n - 1)
+}
+
+func main() {
+    println("Factorial of 5 is:")
+    println(factorial(5))
+}

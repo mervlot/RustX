@@ -1,0 +1,23 @@
+// Sample 3: Loops and control flow
+
+func main() {
+    println("--- For Loop (3-part) ---")
+    for i := 0; i < 5; i++ {
+        println("i =", i)
+    }
+
+    println("--- While Loop ---")
+    count := 3
+    while count > 0 {
+        println("count down:", count)
+        count--
+    }
+
+    println("--- Conditionals ---")
+    status := "active"
+    if status == "active" {
+        println("Status is active!")
+    } else {
+        println("Status inactive")
+    }
+}
