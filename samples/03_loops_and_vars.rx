@@ -1,0 +1,21 @@
+// Example 3: Control flow and variables
+name := "RustX"
+
+if name == "RustX" {
+    println("Language initialized successfully!")
+}
+
+// 3-part for loop
+println("Counting with for loop:")
+for i := 0; i < 5; i++ {
+    println("  i =", i)
+}
+
+// While loop
+count := 3
+println("Counting down with while loop:")
+while count > 0 {
+    println("  countdown:", count)
+    count--
+}
+println("Liftoff!")
