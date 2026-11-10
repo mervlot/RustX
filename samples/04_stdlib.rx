@@ -1,0 +1,25 @@
+// Example 4: Standard library functions
+println("--- Strings Builtins ---")
+msg := "hello world"
+println("Original:", msg)
+println("Length:", str_len(msg))
+println("Uppercase:", to_upper(msg))
+println("Contains 'world':", contains(msg, "world"))
+
+words := split(msg, " ")
+println("Words:", words)
+
+println("\n--- Math Builtins ---")
+println("abs(-42) =", abs(-42))
+println("sqrt(64) =", sqrt(64))
+println("pow(2, 8) =", pow(2, 8))
+println("min(10, 20) =", min(10, 20))
+println("max(10, 20) =", max(10, 20))
+
+println("\n--- Time & Filesystem ---")
+println("Current Unix timestamp:", time_now())
+
+test_path := "/tmp/rustx_test.txt"
+write_file(test_path, "RustX standard library file test!")
+content := read_file(test_path)
+println("Read from file:", content)

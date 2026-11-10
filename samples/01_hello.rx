@@ -1,0 +1,4 @@
+// Example 1: Hello World with main function
+func main() {
+    println("Hello World from RustX Starter!")
+}

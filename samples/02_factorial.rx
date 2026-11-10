@@ -1,0 +1,10 @@
+// Example 2: Recursive factorial function with type annotations
+func factorial(n int) int {
+    if n <= 1 {
+        return 1
+    }
+    return n * factorial(n - 1)
+}
+
+println("Factorial of 5 is:", factorial(5))
+println("Factorial of 7 is:", factorial(7))
