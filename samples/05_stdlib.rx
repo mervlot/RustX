@@ -1,0 +1,18 @@
+// String functions
+text := "  RustX Language  "
+println("Original:", text)
+println("Trimmed:", trim(text))
+println("Uppercase:", to_upper(trim(text)))
+println("Contains 'Rust'?", contains(text, "Rust"))
+
+// Math functions
+println("Absolute value of -42:", abs(-42))
+println("2^8 power:", pow(2, 8))
+println("Square root of 144:", sqrt(144))
+println("Max of 15 and 99:", max(15, 99))
+
+// Filesystem basics
+testFile := "test_sample.txt"
+write_file(testFile, "Hello from RustX filesystem!")
+content := read_file(testFile)
+println("Read back from file:", content)
