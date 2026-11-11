@@ -1,0 +1,11 @@
+println("Counting with for loop:")
+for i := 0; i < 5; i++ {
+    println("  i =", i)
+}
+
+println("Counting down with while loop:")
+count := 3
+while count > 0 {
+    println("  count =", count)
+    count--
+}
