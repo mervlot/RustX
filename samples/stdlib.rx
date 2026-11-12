@@ -1,0 +1,22 @@
+// Demonstrating standard library features: strings, math, time, filesystem
+
+println("=== String Operations ===")
+text := "rustx starter language"
+println("Original:", text)
+println("Uppercase:", str_to_upper(text))
+println("Contains 'starter':", str_contains(text, "starter"))
+
+println("=== Math Operations ===")
+println("Sqrt of 16:", math_sqrt(16))
+println("Pow 2^8:", math_pow(2, 8))
+println("Abs -42:", math_abs(-42))
+println("Min(20, 50):", math_min(20, 50))
+println("Max(20, 50):", math_max(20, 50))
+
+println("=== Time & Filesystem ===")
+println("Current timestamp (ms):", time_now())
+
+filename := "/tmp/rustx_test.txt"
+write_file(filename, "RustX Starter File I/O Test\n")
+content := read_file(filename)
+println("Read from file:", content)

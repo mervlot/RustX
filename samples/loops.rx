@@ -1,0 +1,17 @@
+// Demonstrating loops and control flow in RustX Starter
+
+println("--- While Loop Counting ---")
+count := 3
+while count > 0 {
+    println("count down:", count)
+    count--
+}
+
+println("--- For Loop Summation ---")
+sum := 0
+for i := 1; i <= 5; i++ {
+    sum = sum + i
+    println("adding", i, "-> partial sum:", sum)
+}
+
+println("Final sum:", sum)
